@@ -1,0 +1,44 @@
+{
+  "author": "Martin Wawrusch <martin@wawrusch.com> (http://martinatsunset.com)",
+  "name": "mongoose-plugins-timestamp",
+  "description": "Some error objects prepackaged.",
+  "version": "0.2.0",
+  "main" : "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codedoctor/mongoose-plugins-timestamp.git"
+  },
+  "bin" : {
+  },
+  "directories" : {
+    "lib" : "./lib",
+    "test" : "./test"
+  },
+  "keywords" : [
+    "errors"
+  ],
+  "scripts": {
+    "prepublish" : "coffee -c -o lib src",
+    "watch" : "coffee -c -w  -o lib src",
+    "test": "coffee -c -o lib src;NODE_ENV=test node_modules/.bin/mocha --timeout 10000 -R spec test/*.coffee"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "mongoose" : ">=3.4.0"
+  },
+  "devDependencies": {
+    "async": "0.1.22",
+    "coffee-script": "1.4.0",
+    "should": "1.2.1",
+    "mocha": "1.6.0"
+  },
+  "bugs": { "url": "http://github.com/codedoctor/mongoose-plugins-timestamp/issues" },
+  "licenses": [
+    { "type": "MIT",
+      "url": "http://github.com/codedoctor/mongoose-plugins-timestamp/raw/master/LICENSE"
+    }
+  ]
+  
+}
